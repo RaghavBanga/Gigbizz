@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_15sdp"
+    android:paddingTop="@dimen/_15sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/gigbiz_app_log" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/project_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:text="Data Entry" />
+            <TextView
+                android:id="@+id/comp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/app_red"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_alignParentRight="true"
+                android:text="Data Entry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="freelancer"
+                android:padding="@dimen/_2sdp"
+                android:backgroundTint="@color/grey"
+                android:background="@drawable/text_bg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                />
+            <TextView
+                android:id="@+id/project_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="offsite"
+                android:padding="@dimen/_2sdp"
+                android:backgroundTint="@color/grey"
+                android:background="@drawable/text_bg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:textSize="@dimen/_10ssp"
+            android:layout_alignParentRight="true"
+            android:text="Rs500 - Rs700" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:backgroundTint="@color/dot_light_screen2"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:text="Live"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/grey"
+        />
+
+</LinearLayout>

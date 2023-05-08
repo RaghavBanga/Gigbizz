@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg_color"
+    android:paddingLeft="@dimen/_15sdp"
+    android:paddingTop="@dimen/_15sdp"
+    android:paddingRight="@dimen/_15sdp"
+    tools:context=".fragments.amazonform.shopinfoamazon.ShopInfoAmazonFragment">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_100sdp"
+        android:id="@+id/dancer"
+        android:scaleType="fitXY"
+        android:src="@drawable/amazon_gif" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Seller Store Name (As per Gst)"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/seller_store_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="Seller Name (Shop owner Name)"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/seller_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="City"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/City"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Seller Mobile Number (Whose Register in amazon central panel)"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/seller_mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Register Mail Id"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/Register_Mail_Id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="GST Number"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/GST_Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter_medium_500"
+                android:text="GST Status"
+                android:textColor="@color/splash_text_color"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/grey" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/Composition"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Composition"
+                    android:textSize="@dimen/_15ssp" />
+
+                <RadioButton
+                    android:id="@+id/Regular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Regular"
+                    android:textSize="@dimen/_15ssp" />
+
+                <RadioButton
+                    android:id="@+id/GST_NOT_active"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GST NOT active"
+                    android:textSize="@dimen/_15ssp" />
+
+                <RadioButton
+                    android:id="@+id/GST_Active"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GST Active"
+                    android:textSize="@dimen/_15ssp" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:backgroundTint="@color/colorAccent"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg_color"
+    android:paddingTop="@dimen/_15sdp"
+    android:paddingRight="@dimen/_15sdp"
+    android:paddingLeft="@dimen/_15sdp"
+    tools:context=".fragments.flipkartform.shopinfoflipkart.ShopInfoFlipkartFragment">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_100sdp"
+        android:id="@+id/dancer"
+        android:src="@drawable/flipkart_gif" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Shop Category (किस चीज की दुकान है)"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter_medium_500"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/splash_text_color"
+                android:textSize="@dimen/_11ssp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/points_bg"
+                >
+
+                <Spinner
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+            <!--            <RadioGroup-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:id="@+id/radioGroup">-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/AUTOMOBILE"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="AUTOMOBILE"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/CLOTHING"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="CLOTHING"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/FOOTWEAR"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="FOOTWEAR"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/MOBILE"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="MOBILE"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/ELECTRONICS"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="ELECTRONICS"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/GROCERY"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="GROCERY"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/HEALTH"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="HEALTH &amp; MEDICAL"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/HARDWARE"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="HARDWARE"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/SPORTS"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="SPORTS"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/BEAUTY"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="BEAUTY &amp; PERSONAL"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/STATIONARY"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="STATIONARY"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/HOME"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="HOME &amp; KITCHEN"-->
+<!--                    android:textSize="@dimen/_15ssp" />-->
+
+<!--            </RadioGroup>-->
+
+            <EditText
+                android:id="@+id/other"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rectangular_bg"
+                android:ems="10"
+                android:visibility="gone"
+                android:hint="Other"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Shop Name/DBA Name"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Supplier Email ID (register on flipkart)"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/supplier_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="Password "
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Supplier Mobile No.(register on Flipkart)"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/supplier_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="Supplier City"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/supplier_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Supplier GST Number (GST Number should be Correct)"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/supplier_gst"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Supplier's pin code"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/supplier_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</LinearLayout>

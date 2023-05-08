@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg_color"
+    android:paddingLeft="@dimen/_15sdp"
+    android:paddingTop="@dimen/_15sdp"
+    android:paddingRight="@dimen/_15sdp"
+    tools:context=".fragments.amazonform.otherinfoamazon.OtherInfoAmazonFragment">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_100sdp"
+        android:id="@+id/dancer"
+        android:scaleType="fitXY"
+        android:src="@drawable/amazon_gif" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="FOS Name"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/fos_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Mobile Number"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/mob_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Mobile Number"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="Team Leader Name"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/team_leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter_medium_500"
+                android:text="Manager Name"
+                android:textColor="@color/splash_text_color"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/points_bg"
+                >
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/manager_spin"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent" />-->
+
+                <EditText
+                    android:id="@+id/Manager_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Merchant Token Number"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/merchant_token_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter_medium_500"
+                android:text="User Permission  Mail Id"
+                android:textColor="@color/splash_text_color"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/points_bg"
+                >
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/user_per_spin"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent" />-->
+
+                <EditText
+                    android:id="@+id/User_Permission"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/other"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/points_bg"
+                android:ems="10"
+                android:hint="Other"
+                android:visibility="gone"
+                android:padding="@dimen/_5sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="Cosmos ID Receive or not"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cosmos_radioGroup">
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Have You completed Below Seller Onboarding ?"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/supplier_gst"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/_35sdp"-->
+                <!--                    android:background="@drawable/rectangular_bg"-->
+                <!--                    android:ems="10"-->
+                <!--                    android:hint="Your Answer"-->
+                <!--                    android:padding="@dimen/_5sdp" />-->
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/amazon_seller_radioGroup">
+
+                    <RadioButton
+                        android:id="@+id/amazon_seller_ob"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Amazon Seller OB"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Interop Adoption"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/adoption_radioGroup">
+
+                    <RadioButton
+                        android:id="@+id/easy_ship"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Easy Ship &amp; Self Ship"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <RadioButton
+                        android:id="@+id/self_ship"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pure Self Ship"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="25 PRODUCT Shared to Catalogue team  (with MRP/MOP &amp; qnt)
+\n(आपको नीचे दिए गए फॉर्मेट में कैटलॉग टीम को काम से काम 25 प्रोडक्ट की फोटू और प्रोडक्ट डिटेल्स उनके व्हाट्सप नंबर पर या अपने ग्रुप में भेजनी है) शॉप का नाम फॉर्मेट में डालना ना भूले"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/product" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/points_bg"
+                    >
+
+                    <Spinner
+                        android:id="@+id/wssp_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/product_Mrp"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="@dimen/_35sdp"-->
+                <!--                    android:background="@drawable/rectangular_bg"-->
+                <!--                    android:ems="10"-->
+                <!--                    android:hint="Your Answer Yes/No"-->
+                <!--                    android:padding="@dimen/_5sdp" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="PLEASE CLICK BELOW LINK FOR PRICE calculator &amp; GUIDE TO SELLER
+\nhttps://sell.amazon.in/fees-and-pricing?ref_=sdin_h_fees"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/calculator_radioGroup">
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:backgroundTint="@color/colorAccent"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

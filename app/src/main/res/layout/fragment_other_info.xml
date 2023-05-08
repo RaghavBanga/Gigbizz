@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg_color"
+    android:paddingTop="@dimen/_15sdp"
+    android:paddingRight="@dimen/_15sdp"
+    android:paddingLeft="@dimen/_15sdp"
+    tools:context=".fragments.otherinfo.OtherInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Products MRP/MOP"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/mrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                     />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Selling Price"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/sellingprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Colour"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Material : Example(Plastic,Rubber,Iron)"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/material"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Size(if any product size not available Mention N/A)"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/size"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Weight"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                     />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Quantity"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="2nd Product image/pic"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/scdProductimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Product Name"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="MRP/MOP"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/mrp_mop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Selling price"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/sellingprice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Color"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Material"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/material1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Size"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/size1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Weight"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/weight1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Quantity"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp"
+                    />
+                <EditText
+                    android:id="@+id/quantity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:backgroundTint="@color/colorAccent"
+            android:textAllCaps="false"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</LinearLayout>

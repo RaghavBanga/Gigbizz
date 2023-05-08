@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--    <group android:checkableBehavior="single">-->
+
+    <!--    </group>-->
+
+    <!--    <group-->
+    <!--        android:id="@+id/group_item_1"-->
+    <!--        android:checkableBehavior="single">-->
+    <item
+        android:id="@+id/mytask"
+        android:icon="@drawable/ic_baseline_add_task_24"
+        android:iconTint="@color/white"
+        android:title="@string/menu_mytask" />
+    <!--    </group>-->
+    <!--    <group-->
+    <!--        android:id="@+id/group_item_wal"-->
+    <!--        android:checkableBehavior="single">-->
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+        android:iconTint="@color/white"
+        android:title="@string/menu_wallet" />
+    <!--    </group>-->
+    <!--    <group-->
+    <!--        android:id="@+id/group_item_2"-->
+    <!--        android:checkableBehavior="single">-->
+    <item
+        android:id="@+id/myProfile"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        android:iconTint="@color/white"
+        android:title="@string/menu_profile" />
+    <!--    </group>-->
+    <!--    <group-->
+    <!--        android:id="@+id/group_item_3"-->
+    <!--        android:checkableBehavior="single">-->
+    <!--        <item-->
+    <!--            android:id="@+id/addnew_report"-->
+    <!--            android:title="@string/menu_add_new_report" />-->
+    <!--    </group>-->
+    <!--    <group-->
+    <!--        android:id="@+id/group_item_4"-->
+    <!--        android:checkableBehavior="single">-->
+    <item
+        android:id="@+id/reportListFragment"
+        android:icon="@drawable/ic_baseline_work_history_24"
+        android:iconTint="@color/white"
+        android:title="@string/menu_project_report" />
+    <!--    </group>-->
+    <!--    <group-->
+    <!--        android:id="@+id/group_item_4"-->
+    <!--        android:checkableBehavior="single">-->
+    <item
+        android:id="@+id/teamProjectFragment"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:iconTint="@color/white"
+        android:title="@string/menu_team_report" />
+
+    <item
+        android:id="@+id/projectPayoutsFragment"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:iconTint="@color/white"
+        android:title="@string/menu_project_report_detail" />
+
+    <!--    </group>-->
+    <!--    <group-->
+    <!--        android:id="@+id/group_item_5"-->
+    <!--        android:checkableBehavior="single">-->
+    <!--        <item-->
+    <!--            android:id="@+id/contactus"-->
+    <!--            android:title="@string/menu_contactus" />-->
+    <!--    </group>-->
+
+    <!--    <group-->
+    <!--        android:id="@+id/group_item_7"-->
+    <!--        android:checkableBehavior="single">-->
+    <!--        <item-->
+    <!--            android:id="@+id/goodwork"-->
+    <!--            android:title="@string/good_work" />-->
+    <!--    </group>-->
+    <!--    <group-->
+    <!--        android:id="@+id/group_item_7"-->
+    <!--        android:checkableBehavior="single">-->
+    <item
+        android:id="@+id/privacy_policy"
+        android:icon="@drawable/ic_baseline_privacy_tip_24"
+        android:iconTint="@color/white"
+        android:title="@string/Privacy_policy" />
+    <!--    </group>-->
+    <!--    <group-->
+    <!--        android:id="@+id/group_item_6"-->
+    <!--        android:checkableBehavior="single">-->
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_baseline_lock_open_24"
+        android:iconTint="@color/white"
+        android:title="@string/logout" />
+    <!--    </group>-->
+
+
+</menu>

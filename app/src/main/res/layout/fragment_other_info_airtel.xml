@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg_color"
+    android:paddingLeft="@dimen/_15sdp"
+    android:paddingTop="@dimen/_15sdp"
+    android:paddingRight="@dimen/_15sdp"
+    tools:context=".fragments.airtelform.otherinfoairtel.OtherInfoAirtelFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_100sdp"
+        android:id="@+id/dancer"
+        android:scaleType="fitXY"
+        android:src="@drawable/airtel_icon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="FSE Name\nअपना नाम डालिये "
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/fse_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="FSE MOBILE  NUMBER
+\nEnter Your Whitelisted Number(अपना Number डालिये जो   Whitelisted  है )"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/fse_mob_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Mobile Number"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="TRANSACTION DONE OR NOT
+\nTRANSACTION YES OR NOT"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rs_radioGroup">
+
+                    <RadioButton
+                        android:id="@+id/hund_rs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <RadioButton
+                        android:id="@+id/ten_rs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+
+<!--                <EditText-->
+<!--                    android:id="@+id/other"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_35sdp"-->
+<!--                    android:background="@drawable/points_bg"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Other"-->
+<!--                    android:padding="@dimen/_5sdp" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:backgroundTint="@color/colorAccent"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

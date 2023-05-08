@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/page_bg_color"
+    tools:context=".fragments.earningtab.EarningTabFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="@dimen/_7sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/onBack"
+                            android:layout_width="@dimen/_22sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_baseline_tag_faces_24"
+                            app:tint="@color/back_icon_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="No account opened yet!!"
+                            android:textSize="@dimen/_12ssp"
+                            />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:orientation="horizontal">
+<!--                    <com.google.android.material.card.MaterialCardView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="@dimen/_70sdp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_marginRight="@dimen/_5sdp"-->
+<!--                        app:cardElevation="2dp"-->
+<!--                        app:cardCornerRadius="@dimen/_5sdp">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical">-->
+
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Account Opened"-->
+<!--                                android:textSize="@dimen/_11ssp"-->
+<!--                                android:gravity="center"-->
+<!--                                />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="0"-->
+<!--                                android:textSize="@dimen/_14ssp"-->
+<!--                                android:gravity="center"-->
+<!--                                />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </com.google.android.material.card.MaterialCardView>-->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_weight="1"
+                        app:cardElevation="2dp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Earnings"
+                                android:textSize="@dimen/_11ssp"
+                                android:gravity="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/totalIncome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0 Rs"
+                                android:textSize="@dimen/_14ssp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_weight="1"
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Balance"
+                                android:textSize="@dimen/_11ssp"
+                                android:gravity="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0 Rs"
+                                android:textSize="@dimen/_14ssp"
+                                android:gravity="center"
+                                />
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardBackgroundColor="@color/yello_card_color"
+                    app:cardCornerRadius="@dimen/_7sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Balance"
+                            android:textSize="@dimen/_20ssp"
+                            />
+
+                        <TextView
+                            android:id="@+id/banlance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="0 Rs"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:strokeWidth="@dimen/_1sdp"
+                    app:strokeColor="#818080"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="@dimen/_8sdp">
+                    <ImageView
+
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_140sdp"
+                        android:scaleType="fitXY"
+                         />
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="2dp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Share the link with your network and start earning "
+                            android:textSize="@dimen/_12ssp"
+                            android:padding="@dimen/_10sdp"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/points_bg"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/share_url"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_5sdp"
+                                android:ems="10"
+                                android:singleLine="true"
+                                android:gravity="center_vertical"
+                                android:inputType="textPersonName"
+                                android:hint="https://gigbiz.in/" />
+
+                            <TextView
+                                android:id="@+id/sharebtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Share"
+                                android:paddingLeft="@dimen/_15sdp"
+                                android:paddingRight="@dimen/_15sdp"
+                                android:gravity="center"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:background="@color/colorAccent"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_25sdp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/checkBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="I have read and agree to all the terms and conditions mention for the product's  promotion"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/_10ssp"
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_Next"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Go to Leads"-->
+<!--                    android:layout_marginTop="@dimen/_15sdp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:backgroundTint="@color/back_icon_color"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="@dimen/_14ssp" />-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

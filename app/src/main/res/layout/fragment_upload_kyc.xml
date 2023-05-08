@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@color/page_bg_color"
+    tools:context=".fragments.uploadkyc.UploadKycFragment">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        >-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/back"-->
+<!--            android:layout_width="@dimen/_20sdp"-->
+<!--            android:layout_height="@dimen/_20sdp"-->
+<!--            android:layout_margin="@dimen/_5sdp"-->
+<!--            app:tint="@color/back_icon_color"-->
+<!--            android:src="@drawable/back"-->
+<!--            android:background="?android:selectableItemBackgroundBorderless"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text=""-->
+<!--            android:textSize="@dimen/_12ssp"-->
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/_22sdp"-->
+<!--            android:layout_height="@dimen/_22sdp"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:layout_margin="@dimen/_5sdp"-->
+<!--            android:src="@drawable/ic_baseline_help_outline_24"-->
+<!--            app:tint="@color/back_icon_color" />-->
+
+
+<!--    </LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_margin="@dimen/_5sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/_150sdp"-->
+<!--                android:layout_height="@dimen/_150sdp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:layout_gravity="center"-->
+<!--                app:civ_border_color="@color/black"-->
+<!--                app:civ_border_width="1.5dp"-->
+<!--                android:src="@drawable/kyc_banner" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="start"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/inter_medium_500"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="Upload KYC Documents"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="Aadhaar Card"-->
+<!--                    android:fontFamily="@font/inter_medium_500"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:textSize="@dimen/_10ssp"-->
+<!--                    />-->
+
+
+                <EditText
+                    android:id="@+id/aadhaarno"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Aadhaar Card Number"
+                    android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="Phone"-->
+<!--                    android:fontFamily="@font/inter_medium_500"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:textSize="@dimen/_10ssp"-->
+<!--                    />-->
+
+
+                <EditText
+                    android:id="@+id/panno"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Pan Number"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pic"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:padding="@dimen/_20sdp"
+                    android:background="@drawable/points_bg"
+                    android:src="@drawable/person" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:padding="@dimen/_1sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="start"
+                            android:textSize="@dimen/_11ssp"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="Upload your photo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="start"
+                            android:textSize="@dimen/_9ssp"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="JPEG/PNG Upto 5 mb"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/aadhaarcard"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_1sdp"
+                    android:background="@drawable/points_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/text_bg"
+                            android:gravity="start"
+                            android:textSize="@dimen/_11ssp"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="Aadhaar Card Front"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/text_bg"
+                            android:gravity="start"
+                            android:textSize="@dimen/_9ssp"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="JPEG/PNG Upto 5 mb"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/add1"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/colorAccent"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/circuler_btn"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pancard"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_1sdp"
+                    android:background="@drawable/points_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/text_bg"
+                            android:gravity="start"
+                            android:textSize="@dimen/_11ssp"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="Aadhaar Card Back"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/text_bg"
+                            android:gravity="start"
+                            android:textSize="@dimen/_9ssp"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="JPEG/PNG Upto 5 mb"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/add2"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/colorAccent"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/circuler_btn"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/drivingLicense"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_1sdp"
+                    android:background="@drawable/points_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/text_bg"
+                            android:gravity="start"
+                            android:textSize="@dimen/_11ssp"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="Pan Card"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/text_bg"
+                            android:gravity="start"
+                            android:textSize="@dimen/_9ssp"
+                            android:paddingLeft="@dimen/_4sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_4sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="JPEG/PNG Upto 5 mb"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/add3"
+                        android:layout_width="@dimen/_27sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/colorAccent"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/circuler_btn"
+                        android:src="@drawable/ic_baseline_add_24" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_Next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13ssp" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

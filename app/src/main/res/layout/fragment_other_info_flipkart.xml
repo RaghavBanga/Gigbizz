@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg_color"
+    android:paddingLeft="@dimen/_15sdp"
+    android:paddingTop="@dimen/_15sdp"
+    android:paddingRight="@dimen/_15sdp"
+    tools:context=".fragments.flipkartform.otherinfoflipkart.OtherInfoFlipkartFragment">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_100sdp"
+        android:id="@+id/dancer"
+        android:scaleType="fitXY"
+        android:src="@drawable/flipkart_gif" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter_medium_500"
+                android:singleLine="true"
+                android:text="Team Leader Name "
+                android:textColor="@color/splash_text_color"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/points_bg">
+
+                <EditText
+                    android:id="@+id/BDE_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <!--            <RadioGroup-->
+            <!--                android:id="@+id/radioGroup"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Raghunath"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Raghunath"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Manish"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Manish Kumar"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Shahebaz"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Shahebaz Kureshi"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Vartika"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Vartika Lal"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Maksud"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Maksud shaikh"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Azruddin"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Azruddin Shaikh"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Rahul"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Rahul kumar sinha"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Vikash"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Vikash kumar"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Harsh"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Harsh shrivastav"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Aman"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Aman Srivastava"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/PAPPU"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="PAPPU KUMAR"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Rajesh"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Rajesh Kumar Singh"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Sameer"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Sameer pathan"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--            </RadioGroup>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="BDE Name"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/teamleader_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/inter_medium_500"
+                android:singleLine="true"
+                android:text="Manager Name"
+                android:textColor="@color/splash_text_color"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/points_bg">
+
+                <EditText
+                    android:id="@+id/Manager_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <!--            <RadioGroup-->
+            <!--                android:id="@+id/radioGroup1"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/ManishJha"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Manish Jha"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/VipinThakur"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Vipin Thakur"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Anand_Prakash"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Anand Prakash"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Raj_Nagar"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Raj Nagar"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/Dindayal_Dhantosh"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Dindayal/Dhantosh"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--                <RadioButton-->
+            <!--                    android:id="@+id/SHAHRUKH_SHAIKH"-->
+            <!--                    android:layout_width="fill_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="SHAHRUKH SHAIKH"-->
+            <!--                    android:textSize="@dimen/_15ssp" />-->
+
+            <!--            </RadioGroup>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="BDE Mobile Number"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/BDE_mob"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:singleLine="true"
+                    android:text="BDE Email ID"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <EditText
+                    android:id="@+id/BDE_Email_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Your Answer"
+                    android:padding="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="10 PRODUCT Shared to Catalogue team  (with MRP/MOP &amp; qnt)  if any issues CALL  7982962652/ WhatsApp Catalog Department 9289119959
+\n(आपको नीचे दिए गए फॉर्मेट में कैटलॉग टीम को काम से काम १० प्रोडक्ट की फोटू और प्रोडक्ट डिटेल्स उनके व्हाट्सप नंबर पर या अपने ग्रुप में भेजनी है) शॉप का नाम फॉर्मेट में डालना ना भूले"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_250sdp"
+                    android:src="@drawable/product"
+                    android:scaleType="fitXY"
+                    />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/product_Mrp_radioGroup">
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Please Guide For Flipkart Fees 1 (Collection Fees)
+\nक्या अपने सेलर को गाइड किया निचे दिए गए ऑप्शन पर क्लिक करे-YES/NO "
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/collection_fee"
+                    android:scaleType="fitXY"
+                    />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/collection_fee_radioGroup">
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Please Guide For Flipkart Fees 2 (Fixed Fees)
+\nक्या अपने सेलर को गाइड किया निचे दिए गए ऑप्शन पर क्लिक करे-YES/NO "
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_250sdp"
+                    android:src="@drawable/fixed_fees"
+                    android:scaleType="fitXY"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fixed_fee_radioGroup">
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Please Guide For Flipkart Fees 3 (Shipping Fees)
+क्या अपने सेलर को गाइड किया निचे दिए गए ऑप्शन पर क्लिक करे-YES/NO "
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shipping_fee"
+                    android:scaleType="fitXY"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shipping_fee_radioGroup">
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text="Is the seller very interested to sell his product on Flipkart and he wants to list his more products and he wants to manage his account?
+PLEASE ASK TO SELLER THEN SELECT YES &amp; NO
+(He will be given full support for 2 months from Flipkart so that he can understand how he can earn good income by selling his product on Flipkart)
+\nक्या सेलर फ्लिपकार्ट पर अपना प्रोडक्ट सेल्स करने के लिए बहुत इंटरस्टेड है और वो अपने और भी प्रोडक्ट लिस्टिंग करना चाहता है और वो चाहता है उसका कोई अकाउंट मैनेज कर ले ?
+\n(उसे फ्लिपकार्ट की तरफ से २ महीने के लिए पूरा सपोर्ट दिया जायेगा जिससे की वो समझ सके की कैसे फ्लिपकार्ट पर वो अपने प्रोडक्ट को बेच कर अच्छी इनकम कर सकता है)"
+                    android:textColor="@color/grey1"
+                    android:textSize="@dimen/_11ssp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ignite"
+                    android:scaleType="fitXY"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seller_interest_radioGroup">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</LinearLayout>

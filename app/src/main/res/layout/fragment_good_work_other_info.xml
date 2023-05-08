@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg_color"
+    android:padding="@dimen/_15sdp"
+    tools:context=".fragments.goodworkerform.goodworkotherinfo.GoodWorkOtherInfoFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/good_worker_logo"/>
+
+    <TextView
+        android:id="@+id/form_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For Employee"
+        android:fontFamily="@font/rubik_medium"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15ssp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/grey"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="FSE EMP CODE"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/splash_text_color"
+                    android:textSize="@dimen/_11ssp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/grey"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup">
+
+                    <RadioButton
+                        android:id="@+id/GIG_1442"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1442"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <RadioButton
+                        android:id="@+id/GIG_1441"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1441"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <RadioButton
+                        android:id="@+id/GIG_1440"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1440"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <RadioButton
+                        android:id="@+id/GIG_1439"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1439"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <RadioButton
+                        android:id="@+id/GIG_1438"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1438"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:id="@+id/GIG_1437"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1437"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:id="@+id/GIG_1436"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1436"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:id="@+id/GIG_1435"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1435"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <RadioButton
+                        android:id="@+id/GIG_1434"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1434"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:id="@+id/GIG_1433"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1433"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:id="@+id/GIG_1432"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1432"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:id="@+id/GIG_1431"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1431"
+                        android:textSize="@dimen/_15ssp" />
+                    <RadioButton
+                        android:id="@+id/GIG_1443"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIG-1443"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/other"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/points_bg"
+                    android:ems="10"
+                    android:hint="Other"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Fse Name"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/splash_text_color"
+                        android:textSize="@dimen/_11ssp"
+                        />
+                    <EditText
+                        android:id="@+id/fse_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/points_bg"
+                        android:ems="10"
+                        android:hint="Your Answer"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:text="Fse Mobile Number"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/splash_text_color"
+                        android:textSize="@dimen/_11ssp"
+                        />
+                    <EditText
+                        android:id="@+id/fse_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/points_bg"
+                        android:ems="10"
+                        android:hint="Your Answer"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:text="Team Leader Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/splash_text_color"
+                        android:textSize="@dimen/_11ssp"
+                        />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroup_team">
+
+                        <RadioButton
+                            android:id="@+id/Mayank_Shukla"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mayank Shukla"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <RadioButton
+                            android:id="@+id/Santosh_Kumar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Santosh Kumar"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <RadioButton
+                            android:id="@+id/AnshulTiwari"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Anshul Tiwari"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <RadioButton
+                            android:id="@+id/KrishnaGopal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Krishna Gopal"
+                            android:textSize="@dimen/_15ssp" />
+
+                        <RadioButton
+                            android:id="@+id/HitendraSingh"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hitendra Singh"
+                            android:textSize="@dimen/_15ssp" />
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/other_team_leader"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/points_bg"
+                        android:ems="10"
+                        android:hint="Other"
+                        />
+
+                </LinearLayout>
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/user_name_lay"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:fontFamily="@font/inter_medium_500"-->
+<!--                        android:text="User(Employee) Name"-->
+<!--                        android:layout_marginTop="@dimen/_5sdp"-->
+<!--                        android:textColor="@color/splash_text_color"-->
+<!--                        android:textSize="@dimen/_11ssp"-->
+<!--                        />-->
+<!--                    <EditText-->
+<!--                        android:id="@+id/user_name"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/_35sdp"-->
+<!--                        android:padding="@dimen/_5sdp"-->
+<!--                        android:background="@drawable/points_bg"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Your Answer"-->
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/user_mobile_no_lay"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:fontFamily="@font/inter_medium_500"-->
+<!--                        android:text="User(Employee) Mobile Number"-->
+<!--                        android:layout_marginTop="@dimen/_5sdp"-->
+<!--                        android:textColor="@color/splash_text_color"-->
+<!--                        android:textSize="@dimen/_11ssp"-->
+<!--                        />-->
+<!--                    <EditText-->
+<!--                        android:id="@+id/user_mobile_no"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/_35sdp"-->
+<!--                        android:padding="@dimen/_5sdp"-->
+<!--                        android:background="@drawable/points_bg"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Your Answer"-->
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+<!--                fields for employer-->
+                <LinearLayout
+                    android:id="@+id/company_name_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:text="Company Name (As per Documents Proof)"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/splash_text_color"
+                        android:textSize="@dimen/_11ssp"
+                        />
+                    <EditText
+                        android:id="@+id/company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/points_bg"
+                        android:ems="10"
+                        android:hint="Your Answer"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/hr_person_name_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:text="Contact /Hr Person Name"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/splash_text_color"
+                        android:textSize="@dimen/_11ssp"
+                        />
+                    <EditText
+                        android:id="@+id/hr_person_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/points_bg"
+                        android:ems="10"
+                        android:hint="Your Answer"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/hr_person_mobile_no_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:text="Contact /Hr Person Mobile Number"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/splash_text_color"
+                        android:textSize="@dimen/_11ssp"
+                        />
+
+                    <EditText
+                        android:id="@+id/hr_person_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/points_bg"
+                        android:ems="10"
+                        android:hint="Your Answer"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorAccent"
+            android:textAllCaps="false"
+            android:text="Next" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

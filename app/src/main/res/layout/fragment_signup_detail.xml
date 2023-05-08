@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg_color"
+    android:padding="@dimen/_15sdp"
+    tools:context=".fragments.goodworkerform.forsignup.SignupDetailFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/good_worker_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For SignUp"
+        android:textStyle="bold"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="@dimen/_15ssp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/grey"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radio_employee"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text=" Employee"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:checked="false"-->
+<!--            android:textSize="@dimen/_15ssp" />-->
+
+        <RadioButton
+            android:id="@+id/radio_employer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" Employer"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:textSize="@dimen/_15ssp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</LinearLayout>

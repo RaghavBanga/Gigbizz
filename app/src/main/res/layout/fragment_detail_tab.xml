@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.details.DetailTabFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/gigbiz_app_log" />
+
+            <TextView
+                android:id="@+id/compname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:textColor="@color/back_icon_color"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_alignParentRight="true"
+                android:text="Data Entry and Computer Operator" />
+
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:singleLine="true"-->
+<!--            android:text="Job Details"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_marginLeft="@dimen/_10sdp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_18ssp"-->
+<!--            />-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="Project Time"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/back_icon_color"-->
+<!--                    android:textSize="@dimen/_10ssp"-->
+<!--                    />-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="@dimen/_7sdp"-->
+<!--                    android:paddingBottom="@dimen/_7sdp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_22sdp"-->
+<!--                        android:layout_height="@dimen/_22sdp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        android:src="@drawable/ic_baseline_access_time_24"-->
+<!--                        app:tint="@color/back_icon_color" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/time"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:paddingLeft="@dimen/_10sdp"-->
+<!--                        android:paddingRight="@dimen/_4sdp"-->
+<!--                        android:textSize="@dimen/_10ssp"-->
+<!--                        android:textColor="@color/grey1"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:text="10:00 AM - 06:00 PM" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:background="@color/grey"-->
+<!--                    />-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="@dimen/_7sdp"-->
+<!--                    android:paddingBottom="@dimen/_7sdp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_22sdp"-->
+<!--                        android:layout_height="@dimen/_22sdp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        app:tint="@color/back_icon_color"-->
+<!--                        android:src="@drawable/ic_baseline_location_on_24" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:paddingLeft="@dimen/_10sdp"-->
+<!--                        android:paddingRight="@dimen/_4sdp"-->
+<!--                        android:textColor="@color/grey1"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:text="Remote(Work From Home)\nMust have a laptop/computer with hi-speed" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:background="@color/grey"-->
+<!--                    />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Project description"
+                    android:textStyle="bold"
+                    android:textColor="@color/back_icon_color"
+                    android:textSize="@dimen/_10ssp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:scaleType="fitCenter"
+                        app:tint="@color/back_icon_color"
+                        android:src="@drawable/ic_baseline_insert_drive_file_24" />
+
+
+                    <TextView
+                        android:id="@+id/education"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/grey1"
+                        android:layout_alignParentRight="true"
+                        android:text="Even the world's most successful individuals have experienced their fair share of setbacks and hardships.There's much to learn from their challenges as well as thei
+                             they've condensed their wisdom into meaningful quotes that
+                               you can store for later use." />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Location"
+                    android:textStyle="bold"
+                    android:textColor="@color/back_icon_color"
+                    android:textSize="@dimen/_10ssp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:scaleType="fitCenter"
+                        app:tint="@color/back_icon_color"
+                        android:src="@drawable/ic_baseline_ondemand_video_24" />
+
+
+                    <TextView
+                        android:id="@+id/training_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/grey1"
+                        android:layout_alignParentRight="true"
+                        android:text="Offline" />
+
+                </LinearLayout>
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:background="@color/grey"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="Project Price"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/back_icon_color"-->
+<!--                    android:textSize="@dimen/_10ssp"-->
+<!--                    />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="@dimen/_7sdp"-->
+<!--                    android:paddingBottom="@dimen/_7sdp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_22sdp"-->
+<!--                        android:layout_height="@dimen/_22sdp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        app:tint="@color/back_icon_color"-->
+<!--                        android:src="@drawable/ic_baseline_attach_money_24" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/price"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:paddingLeft="@dimen/_10sdp"-->
+<!--                        android:paddingRight="@dimen/_4sdp"-->
+<!--                        android:textSize="@dimen/_10ssp"-->
+<!--                        android:textColor="@color/grey1"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:text="$ 500 - $ 700/hr" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:background="@color/grey"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="Project Type"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/back_icon_color"-->
+<!--                    android:textSize="@dimen/_10ssp"-->
+<!--                    />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="@dimen/_7sdp"-->
+<!--                    android:paddingBottom="@dimen/_7sdp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="@dimen/_22sdp"-->
+<!--                        android:layout_height="@dimen/_22sdp"-->
+<!--                        android:scaleType="fitCenter"-->
+<!--                        app:tint="@color/back_icon_color"-->
+<!--                        android:src="@drawable/ic_baseline_ondemand_video_24" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/project_type"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:paddingLeft="@dimen/_10sdp"-->
+<!--                        android:paddingRight="@dimen/_4sdp"-->
+<!--                        android:textSize="@dimen/_10ssp"-->
+<!--                        android:textColor="@color/grey1"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:text="Online" />-->
+
+<!--                </LinearLayout>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Project Status"
+                    android:textStyle="bold"
+                    android:textColor="@color/back_icon_color"
+                    android:textSize="@dimen/_10ssp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:scaleType="fitCenter"
+                        app:tint="@color/back_icon_color"
+                        android:src="@drawable/ic_baseline_ondemand_video_24" />
+
+
+                    <TextView
+                        android:id="@+id/project_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_4sdp"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/grey1"
+                        android:layout_alignParentRight="true"
+                        android:text="Active" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

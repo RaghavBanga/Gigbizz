@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/mytask">
+
+    <fragment
+        android:id="@+id/mytask"
+        android:name="com.gigbiz.fragments.mytask.MyTaskFragment"
+        tools:layout="@layout/fragment_mytask" />
+
+    <fragment
+        android:id="@+id/myProfile"
+        android:name="com.gigbiz.fragments.myprofile.MyProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/addnew_report"
+        android:name="com.gigbiz.fragments.addnewreport.AddNewReportFragment"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/reportListFragment"
+        android:name="com.gigbiz.fragments.reportlist.ReportListFragment"
+        tools:layout="@layout/fragment_report_list" >
+        <action
+            android:id="@+id/action_reportListFragment_to_approvedFragment"
+            app:destination="@id/approvedFragment" />
+        <action
+            android:id="@+id/action_reportListFragment_to_rejectedFragment"
+            app:destination="@id/rejectedFragment" />
+        <action
+            android:id="@+id/action_reportListFragment_to_submittedFragment"
+            app:destination="@id/submittedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/approvedFragment"
+        android:name="com.gigbiz.fragments.approved.ApprovedFragment"
+        android:label="fragment_approved"
+        tools:layout="@layout/fragment_approved" >
+        <action
+            android:id="@+id/action_approvedFragment_to_dataDetailScreenFragment"
+            app:destination="@id/dataDetailScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rejectedFragment"
+        android:name="com.gigbiz.fragments.rejected.RejectedFragment"
+        android:label="fragment_rejected"
+        tools:layout="@layout/fragment_rejected" >
+        <action
+            android:id="@+id/action_rejectedFragment_to_dataDetailScreenFragment"
+            app:destination="@id/dataDetailScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/submittedFragment"
+        android:name="com.gigbiz.fragments.submitted.SubmittedFragment"
+        android:label="fragment_submitted"
+        tools:layout="@layout/fragment_submitted" >
+        <action
+            android:id="@+id/action_submittedFragment_to_dataDetailScreenFragment"
+            app:destination="@id/dataDetailScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataDetailScreenFragment"
+        android:name="com.gigbiz.fragments.datadetailscreen.DataDetailScreenFragment"
+        android:label="fragment_data_detail_sreen"
+        tools:layout="@layout/fragment_data_detail_sreen" >
+        <action
+            android:id="@+id/action_dataDetailScreenFragment_to_reportListFragment2"
+            app:destination="@id/reportListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportListSelectionFragment"
+        android:name="com.gigbiz.fragments.reportlistselection.ReportListSelectionFragment"
+        tools:layout="@layout/fragment_report_list_selection" />
+    <fragment
+        android:id="@+id/earningsFragment"
+        android:name="com.gigbiz.fragments.earnings.EarningsFragment"
+        tools:layout="@layout/fragment_earnings" />
+    <fragment
+        android:id="@+id/teamReportFragment"
+        android:name="com.gigbiz.fragments.assignedproject.teamAssignedProject"
+        tools:layout="@layout/fragment_team_assigned_project" />
+    <fragment
+        android:id="@+id/projectPayoutsFragment"
+        android:name="com.gigbiz.fragments.projectpayoutreport.ProjectPayoutsFragment"
+        tools:layout="@layout/fragment_project_payouts" />
+</navigation>

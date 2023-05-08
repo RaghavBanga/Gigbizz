@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context=".activity.JobSuccessActivity">
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/pic2"-->
+    <!--        android:layout_width="@dimen/_100sdp"-->
+    <!--        android:layout_height="@dimen/_100sdp"-->
+    <!--        android:src="@drawable/success" />-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="top|center"
+        app:lottie_rawRes="@raw/success_ani"
+        android:padding="@dimen/_7sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:gravity="center"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Success!"
+        android:textSize="@dimen/_22ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:fontFamily="@font/inter_medium_500"
+        android:text="Good Job your job is submitted successfully"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/shopid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:fontFamily="@font/inter_medium_500"
+        android:text="ID"
+        android:textSize="@dimen/_12ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submittedjob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorAccent"
+            android:text="See submitted jobs"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

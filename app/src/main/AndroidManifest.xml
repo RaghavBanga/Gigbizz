@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/gigbiz_app_log"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/gigbiz_app_log_round"
+        android:supportsRtl="true"
+        android:theme="@style/MainGigbiz"
+        tools:targetApi="31">
+    <activity
+        android:name=".activity.ResetPasswordActivity"
+        android:alwaysRetainTaskState="true"
+        android:exported="false"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen"
+        />
+    <activity
+        android:name=".activity.KycUploadActivity"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen"/>
+    <activity
+        android:name=".activity.LandingPage"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.GoodWorkFormScreen"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/MainGigbiz" />
+    <activity
+        android:name=".activity.CreditCardFormScreen"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.CreditChooseScreen"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.LoanFormScreen"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.LoansChooseScreen"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.BankingLoanAndCradit"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.TaskCategoriesActivity"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.JobSuccessActivity"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/MainGigbiz" />
+    <activity
+        android:name=".activity.FormDashBoardActivity"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.AddNewTaskActivity"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.TaskDetailActivity"
+        android:exported="false"
+        android:launchMode="singleInstance"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.ContactusActivity"
+        android:exported="false"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activity.HomeActivity"
+        android:exported="false"
+        android:label="@string/title_activity_home"
+        android:screenOrientation="portrait"
+        android:theme="@style/MainGigbiz.NoActionBar" />
+    <activity
+        android:name=".activity.LoginActivity"
+        android:exported="false"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.SignupActivity"
+        android:exported="false"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.SelectionScreen"
+        android:exported="false"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.IntroScreen"
+        android:exported="false"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen" />
+    <activity
+        android:name=".activity.SplashScreen"
+        android:exported="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/SplashScreen">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+</application>
+
+</manifest>
